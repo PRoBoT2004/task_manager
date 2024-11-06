@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* index.css */
+/* index.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212; /* Dark mode background */
+  color: #ffffff; /* Default text color for dark mode */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode {
+  background-color: #ffffff; /* Light mode background */
+  color: #121212; /* Default text color for light mode */
+}
+
+header {
+  background-color: #1c1c1c; /* Dark mode header */
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+body.light-mode header {
+  background-color: #f0f0f0; /* Light mode header */
+  color: #121212;
+}
+
+button {
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: rgba(0, 255, 0, 0.7); /* Button color */
+  color: #fff; /* Button text color */
+}
+
+button:hover {
+  background-color: rgba(0, 255, 0, 1);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+}
+
+input, textarea, select {
+  border: 2px solid #1c1c1c; /* Border color */
+  border-radius: 10px;
+  padding: 10px;
+  transition: border-color 0.3s ease;
+}
+
+input, textarea, select {
+  background-color: #222; /* Dark mode input background */
+  color: #ffffff; /* Dark mode text color */
+}
+
+body.light-mode input,
+body.light-mode textarea,
+body.light-mode select {
+  background-color: #ffffff; /* Light mode input background */
+  color: #121212; /* Light mode text color */
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: rgba(0, 255, 0, 0.7);
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+.task {
+  background-color: #222; /* Dark mode task background */
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+body.light-mode .task {
+  background-color: #f8f8f8; /* Light mode task background */
+  color: #121212; /* Light mode task text color */
+}
+
+.task:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+}
